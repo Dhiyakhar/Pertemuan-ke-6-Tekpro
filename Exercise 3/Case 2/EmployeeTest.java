@@ -1,5 +1,9 @@
 public class EmployeeTest {
     public static void main(String[] args) {
+    	
+    	// Declare and allocate a new instance of Employee
+        // specifying name. salary, day, month, and year
+    	
         Employee[] staff = new Employee[3];
         staff[0] = new Employee("Antonio Rossi", 2000000, 1, 10, 1989);
         staff[1] = new Employee("Maria Bianchi", 2500000, 1, 12, 1991);
@@ -7,9 +11,9 @@ public class EmployeeTest {
 
         int i;
         for (i = 0; i < 3; i++)
-            staff[i].raiseSalary(5);
+            staff[i].raiseSalary(5);	//mengatur kenaikan gaji sebesar 5 persen
 
-        for (i = 0; i < 3; i++)
+        for (i = 0; i < 3; i++)			//mencetak gaji masing-masing pegawai
             staff[i].print();
     }
 }
